@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "CargaStaging", "CargaStaging\CargaStaging.dtproj", "{6370490A-4FE3-4260-844D-A72B153B87AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6370490A-4FE3-4260-844D-A72B153B87AD}.Development|Default.ActiveCfg = Development
+		{6370490A-4FE3-4260-844D-A72B153B87AD}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86CCE285-6909-4779-809E-A20533F5DC90}
+	EndGlobalSection
+EndGlobal
