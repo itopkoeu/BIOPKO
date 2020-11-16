@@ -1,0 +1,2 @@
+﻿CREATE USER [OPKO\NGraells] FOR LOGIN [OPKO\NGraells];
+

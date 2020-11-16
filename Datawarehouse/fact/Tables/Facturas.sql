@@ -1,0 +1,27 @@
+﻿CREATE TABLE [fact].[Facturas] (
+    [pkFacturas]      NCHAR (15)    NOT NULL,
+    [NumeroFactura]   NCHAR (10)    NOT NULL,
+    [PosicionFactura] NCHAR (4)     NOT NULL,
+    [bkProducto]      NVARCHAR (18) NOT NULL,
+    [skProducto]      INT           NOT NULL,
+    [bkSolicitante]   NVARCHAR (10) NOT NULL,
+    [skSolicitante]   INT           NOT NULL,
+    [bkPagador]       NVARCHAR (10) NOT NULL,
+    [skPagador]       INT           NOT NULL,
+    [bkComercial]     NVARCHAR (10) NOT NULL,
+    [skComercial]     INT           NOT NULL,
+    [bkFechaFactura]  DATE          NOT NULL,
+    [skFechaFactura]  INT           NOT NULL,
+    [bkTipoPosicion]  NVARCHAR (4)  NOT NULL,
+    [skTipoPosicion]  INT           NOT NULL,
+    [Importe]         INT           NULL,
+    [Cantidad]        INT           NULL,
+    [ZCLI]            INT           NULL,
+    [VPRS]            INT           NULL,
+    [ZCDO]            INT           NULL,
+    [ZDCO]            INT           NULL,
+    [InsertAuditKey]  INT           NOT NULL,
+    [UpdateAuditKey]  INT           NOT NULL,
+    CONSTRAINT [PK_Facturas] PRIMARY KEY CLUSTERED ([pkFacturas] ASC)
+);
+
