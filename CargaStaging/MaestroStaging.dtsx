@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="VOSTOK"
   DTS:CreatorName="CERTIA\jmcalzada"
-  DTS:DTSID="{159FECAB-BB3D-4CEB-A04E-DF4E861B8F13}"
+  DTS:DTSID="{8E0CCF04-BD3B-4B16-AAAD-0A420CFDB5BA}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.132"
   DTS:LocaleID="3082"
-  DTS:ObjectName="Plantilla"
+  DTS:ObjectName="MaestroStaging"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{6448313E-21EB-4323-A897-1CC2B5FB4F09}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{D32A4100-A6C4-45AE-A962-1F71B17BC0EB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="3"
-      DTS:DTSID="{A90F5EC8-A8E7-4C36-BEA6-3B09F0FCA996}"
+      DTS:DTSID="{27778188-88F7-4874-B870-841F865742D7}"
       DTS:ObjectName="ParentPkgExecKey">
       <DTS:Property
         DTS:DataType="3"
@@ -29,7 +29,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B69731A4-C5B6-486C-9E91-6F92877FBC5E}"
+      DTS:DTSID="{F71ADECB-45CC-4215-AE00-7B20DB6E03A7}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="CatalogName">
@@ -38,7 +38,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{78CAF7C6-4887-4900-B275-98FEB328B5A2}"
+      DTS:DTSID="{B1F1E16A-D1AC-404F-BE98-DB6C08F22A2F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="DatabaseName">
@@ -47,7 +47,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{87A86695-15C9-480B-8E6C-CC3C646B817C}"
+      DTS:DTSID="{7F7F2336-AEA1-4FE2-AE17-56232BF21F12}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="DeletedAuditKey">
@@ -56,7 +56,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{91EE1BE4-9405-42B9-9318-DAFCD5DCA837}"
+      DTS:DTSID="{5B145F1F-4701-4CB2-B478-07A49D68BCB4}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="DeletedRowCnt">
@@ -65,7 +65,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B4BCD654-473C-4679-A300-B03458CFF95D}"
+      DTS:DTSID="{D492AD6E-A2CC-47D4-A294-F464A873574B}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ErrorRowCnt">
@@ -74,7 +74,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{038A32DA-530D-402A-A9CB-2B4880E1FB71}"
+      DTS:DTSID="{9044ACBF-8439-4C6D-AC3F-478769C05F4D}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ExpiredAuditKey">
@@ -83,7 +83,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E6306953-AEFA-4874-8D04-A9C6E994673E}"
+      DTS:DTSID="{7DEECA99-1950-4D16-AEB2-11EF32F5431E}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ExpiredRowCnt">
@@ -92,7 +92,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E76C38DE-06DB-4F2B-B891-8DC21734C466}"
+      DTS:DTSID="{C4C55007-6FC5-4A4E-AC2B-66992C1B33D8}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ExtractedRowCnt">
@@ -101,7 +101,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{AA054F1B-969B-41A3-81AB-00A330C8EA8D}"
+      DTS:DTSID="{2172B5B6-C76E-450A-B195-058C7DED42EF}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::FilesPath]"
       DTS:IncludeInDebugDump="2345"
@@ -113,7 +113,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{45F84C93-FAEA-4EDF-908C-DDEA3E2A9244}"
+      DTS:DTSID="{FE98C921-218A-450F-A047-A7CEAAC5FEF2}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::FilesPath] + &quot;\\&quot; +  @[$Project::InputFilesPath]"
       DTS:IncludeInDebugDump="2345"
@@ -124,7 +124,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6454333D-F0FE-4143-B2F5-38685EF208DB}"
+      DTS:DTSID="{CBAA05D0-A5E9-4588-B90E-7585AE229238}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="InvalidAuditKey">
@@ -133,7 +133,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9C445A3A-DBA6-421D-9C99-10655DA93918}"
+      DTS:DTSID="{98A83D29-600C-4092-8057-A396E4EB0E29}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::OutputFilesPath] + &quot;Invalid_&quot; +  @[User::TableName] + &quot;.raw&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -144,7 +144,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4C9131F3-8F89-4B81-BEFF-005F368017AF}"
+      DTS:DTSID="{0D676E47-77E9-4CA9-922C-D0D35B2D6109}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="InvalidRowCnt">
@@ -153,7 +153,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E490A82B-5D25-4803-8372-DE909BB9EF15}"
+      DTS:DTSID="{DDEF6405-D01C-4E6A-A1C0-72E9BB117DB9}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::IsFirstLoad]"
       DTS:IncludeInDebugDump="2345"
@@ -164,7 +164,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A48CDEA3-BBAD-42FF-8057-8D429A1D9B69}"
+      DTS:DTSID="{5EA29E4E-5B2B-4AD3-8F11-7974CDCF2794}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::FilesPath] + &quot;\\&quot; +   @[$Project::LogsFilesPath]"
       DTS:IncludeInDebugDump="2345"
@@ -175,7 +175,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{ABBB7DA5-04CC-4733-9ADA-46D7BBD6A9FB}"
+      DTS:DTSID="{D0D3115C-B4FE-44B3-A901-9D1D9A97F658}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="NewAuditKey">
@@ -184,7 +184,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{103BC32E-FDCF-48BA-AF54-A9EF3BA9D02C}"
+      DTS:DTSID="{50255CCE-3592-46C7-BEE8-8AB7DB13BCD2}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="NewRowCnt">
@@ -193,7 +193,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0083BC6E-1E9C-49AC-9A14-0A5030308B63}"
+      DTS:DTSID="{BEB9D514-52C7-4140-BD4A-CC1562EC4E78}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::FilesPath] + &quot;\\&quot; +   @[$Project::OutputFilesPath]"
       DTS:IncludeInDebugDump="2345"
@@ -204,7 +204,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{50C66965-0DFD-4F8A-BE23-EF7E26C74559}"
+      DTS:DTSID="{F21F4B8A-2A89-4EB1-AD6B-D3570BB4954D}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Package::ParentPkgExecKey]"
       DTS:IncludeInDebugDump="2345"
@@ -215,7 +215,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{919EF6EE-4201-4743-860D-049E24347A94}"
+      DTS:DTSID="{8D45DF0E-526D-4EDB-9234-0A0444A158F7}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="PkgExecKey">
@@ -224,7 +224,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{ED05B760-2FF8-4015-ACD0-003BC370DDD9}"
+      DTS:DTSID="{0DDF196B-56EC-43C1-9E9B-494C1E7B5E8B}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ReturnValue">
@@ -233,7 +233,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A5C0F69E-4278-491B-B988-E196AF59FAEE}"
+      DTS:DTSID="{9699C252-374F-41F3-B7D1-462B3E5C6D13}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowChangeDate">
@@ -242,7 +242,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C8A772CB-1D75-41CB-B8CB-980EAAD715C5}"
+      DTS:DTSID="{9EDCF642-C15B-44A0-AA3B-4B02E3FA97EA}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowStartDate">
@@ -251,7 +251,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{605AF900-0502-48B7-A289-5EB8B5A28D4F}"
+      DTS:DTSID="{477FDAC3-71BA-442D-9E67-568BAE83065B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SchemaName">
@@ -260,7 +260,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D8BD0023-A254-4D45-B673-E6079B1A007E}"
+      DTS:DTSID="{A2B48C3D-0944-4149-8A4A-98E2731F16AB}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="SpecialRowCnt">
@@ -269,7 +269,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{765FC95C-C5C8-468D-9FFE-8FB38CDE5D7B}"
+      DTS:DTSID="{03CB8C66-511F-4514-9AAC-5F286BD49564}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SuccessFlag">
@@ -278,7 +278,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{010C2E51-4C53-46F5-AC0C-5090126558DF}"
+      DTS:DTSID="{5253398B-3486-4AAB-8162-24655740C672}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TableFinalRowCnt">
@@ -287,7 +287,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E69DF5E4-EAB3-4091-B7BF-0E949290B44D}"
+      DTS:DTSID="{E46CBBCE-7BEA-448B-A0AC-4E9FDF283C00}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TableInitialRowCnt">
@@ -296,7 +296,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{82DA502B-EDA3-45DB-BECD-E5BCFC0F2524}"
+      DTS:DTSID="{123B7AF8-E9C0-42A5-A772-136E97FF6A29}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="TableName">
@@ -305,7 +305,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9D559314-0ABC-4A35-9A32-7FFEE9BF3878}"
+      DTS:DTSID="{AD6C8E74-AC15-4768-A4E9-AD4AD65505DE}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TableProcessKey">
@@ -314,7 +314,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A77E14E4-EBBA-4CFA-9511-94F3ACFD4C24}"
+      DTS:DTSID="{A604ECA0-63DB-45B3-B06A-AEF42A25E163}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="TableType">
@@ -324,7 +324,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{12529010-2F5E-4450-9EC6-B7DE0DC69429}"
+      DTS:DTSID="{92B24561-6D82-4497-A713-C8C6DA7BAAC8}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Type2NewAuditKey">
@@ -333,7 +333,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{83E2A4CE-0B4E-4A37-B1B2-97775B34C6D9}"
+      DTS:DTSID="{516430CE-F34A-4742-A6F5-3DAF25FEFAD5}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Type2NewRowCnt">
@@ -342,7 +342,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{21D4BC4A-9A54-4233-BE75-95C894C9600D}"
+      DTS:DTSID="{0789FDC1-A086-4862-9EA6-3F99B9FBA5A7}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="UnchangedAuditKey">
@@ -351,7 +351,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A3E90000-B057-40FC-B608-E5560F3AC307}"
+      DTS:DTSID="{CC5A0A88-E9D0-4E3C-92AA-6A0BD5A0EB75}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="UnchangedRowCnt">
@@ -360,7 +360,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{8CB35471-C0C7-4715-A5D6-A1AD48BB8777}"
+      DTS:DTSID="{B2162454-449E-4A7B-A11C-10111F174202}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="UpdatedAuditKey">
@@ -369,7 +369,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B8FD9CD0-BA57-4310-96DC-447E8E285B0F}"
+      DTS:DTSID="{78ECA53D-C311-418B-96EF-A064F8638CE5}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="UpdatedRowCnt">
@@ -382,12 +382,12 @@
       DTS:refId="Package\Actualizar metadatos de paquete"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{ebad9623-0561-4409-8070-438711efb2bc}"
+      DTS:DTSID="{2ee94e16-a4bb-4c2c-a19f-6b7cbdc107cd}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Actualizar metadatos de paquete"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -419,79 +419,18 @@
       DTS:refId="Package\Obtener metadatos de paquete"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{38e4f3cc-6472-4fcc-9406-c9693b22039a}"
+      DTS:DTSID="{45A26F65-F180-4793-ADA5-5E88F88795D0}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Obtener metadatos de paquete"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5DC4C8F-85FE-488C-B07A-2EDC84C01D17}"
           SQLTask:IsStoredProc="True"
-          SQLTask:SqlStatementSource="audit.GetPkgExecutionKey" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@PackageName"
-            SQLTask:DtsVariableName="System::PackageName"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="PackageID"
-            SQLTask:DtsVariableName="System::PackageID"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="9"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@VersionGUID"
-            SQLTask:DtsVariableName="System::VersionGUID"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="9"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@VersionMajor"
-            SQLTask:DtsVariableName="System::VersionMajor"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="11"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@VersionMinor"
-            SQLTask:DtsVariableName="System::VersionMinor"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="11"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@VersionBuild"
-            SQLTask:DtsVariableName="System::VersionBuild"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="11"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@StartTime"
-            SQLTask:DtsVariableName="System::StartTime"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="6"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@ParentPkgExecKey"
-            SQLTask:DtsVariableName="$Package::ParentPkgExecKey"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="11"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@PkgExecKey"
-            SQLTask:DtsVariableName="User::PkgExecKey"
-            SQLTask:ParameterDirection="Output"
-            SQLTask:DataType="11"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@ReturnValue"
-            SQLTask:DtsVariableName="User::ReturnValue"
-            SQLTask:ParameterDirection="ReturnValue"
-            SQLTask:DataType="11"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
+          SQLTask:SqlStatementSource="audit.GetPkgExecutionKey" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -499,15 +438,15 @@
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{D9CB4123-D2C9-4FB7-8B82-767E61382F7B}"
-      DTS:EventID="1392533760"
+      DTS:DTSID="{5F756C9F-936A-4952-884E-89B15AB7643E}"
+      DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="La propiedad de propagación del evento"
-          DTS:DTSID="{233B54B9-717E-4D7D-9E0D-C7BA2AFDB30D}"
+          DTS:DTSID="{8CCB901D-D20C-4506-B569-F7271FA3F2C6}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -520,7 +459,7 @@
           DTS:refId="Package.EventHandlers[OnError]\Actualizar metadatos de paquete"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{ef0185d9-5de5-48f6-aa6e-6fe755a91239}"
+          DTS:DTSID="{aa55aa40-ed77-4421-91ce-b95cb39084c2}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Actualizar metadatos de paquete"
@@ -556,7 +495,7 @@
           DTS:refId="Package.EventHandlers[OnError]\Indicador de error"
           DTS:CreationName="Microsoft.ExpressionTask"
           DTS:Description="Tarea de expresión"
-          DTS:DTSID="{59233AB5-A360-4463-A548-712352E4F62C}"
+          DTS:DTSID="{03863e02-25ad-42a3-82bc-5e328cebe711}"
           DTS:ExecutableType="Microsoft.ExpressionTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Indicador de error"
@@ -571,7 +510,7 @@
           DTS:refId="Package.EventHandlers[OnError]\Notificación de error"
           DTS:CreationName="Microsoft.SendMailTask"
           DTS:Description="Tarea Enviar correo"
-          DTS:DTSID="{368170FC-9015-43D9-B90B-D177F4110BA4}"
+          DTS:DTSID="{1a053522-bfae-44be-b23c-cc0f950ff72f}"
           DTS:ExecutableType="Microsoft.SendMailTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Notificación de error"
@@ -610,7 +549,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{036AB48A-D364-48FF-A572-441398962629}"
+          DTS:DTSID="{f688a02c-9414-42f4-9297-a8de238a5ab7}"
           DTS:From="Package.EventHandlers[OnError]\Indicador de error"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -618,7 +557,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{3AFF689F-2DC2-4068-A95F-E14815E19C36}"
+          DTS:DTSID="{6179f3b8-30c6-427b-becf-2365703c9aa9}"
           DTS:From="Package.EventHandlers[OnError]\Notificación de error"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -641,11 +580,11 @@
         <NodeLayout
           Size="233,42"
           Id="Package\Actualizar metadatos de paquete"
-          TopLeft="101,334" />
+          TopLeft="213,390" />
         <NodeLayout
           Size="226,42"
           Id="Package\Obtener metadatos de paquete"
-          TopLeft="94,46" />
+          TopLeft="222,90" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -657,18 +596,18 @@
         <NodeLayout
           Size="233,42"
           Id="Package.EventHandlers[OnError]\Actualizar metadatos de paquete"
-          TopLeft="586,281" />
+          TopLeft="592,337" />
         <NodeLayout
           Size="164,42"
           Id="Package.EventHandlers[OnError]\Indicador de error"
-          TopLeft="590,58" />
+          TopLeft="596,114" />
         <NodeLayout
           Size="174,42"
           Id="Package.EventHandlers[OnError]\Notificación de error"
-          TopLeft="598,167" />
+          TopLeft="604,223" />
         <EdgeLayout
           Id="Package.EventHandlers[OnError].PrecedenceConstraints[Restricción]"
-          TopLeft="672,100">
+          TopLeft="678,156">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -704,7 +643,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.EventHandlers[OnError].PrecedenceConstraints[Restricción 1]"
-          TopLeft="685,209">
+          TopLeft="691,265">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
