@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="Correo"
   DTS:DTSID="{6309ABBE-D115-4AA5-90B2-8D71F5F07CDD}"

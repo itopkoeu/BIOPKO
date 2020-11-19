@@ -40,7 +40,7 @@ BEGIN
                                BEGIN
                                                INSERT INTO err.SchemaChanges(
                                                   TABLE_SCHEMA 
-                                     ,TABLE_NAME
+                                                 ,TABLE_NAME
                                                  ,COLUMN_NAME
                                                  ,COLUMN_DEFAULT
                                                  ,IS_NULLABLE

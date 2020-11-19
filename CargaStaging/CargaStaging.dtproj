@@ -12,11 +12,11 @@
   <DataSourceViews />
   <DeploymentModelSpecificContent>
     <Manifest>
-      <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithUserKey" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+      <SSIS:Project SSIS:ProtectionLevel="DontSaveSensitive" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{fe6c2007-82d2-4b0e-8115-b0076402de03}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">CargaStaging</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
@@ -26,15 +26,14 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">SPBCLSQL03</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1ogJbkxFyEGUhoXPJPmvDwAAAAACAAAAAAADZgAAwAAAABAAAAD4d0huoXzjMqdJapok97rjAAAAAASAAACgAAAAEAAAAK7RckVktkrssj0pKKVz4kGIAAAAPLinx0La7J+l0RBOZwRoP8AAVk9P5OdxG1F+s51ZhXQxtgJFQbfEBb/UJQ0uYaWIwr4iJ/h0dt6RfaYGTn7sZLRyo1K9CY86cvWmk02Vs3DTY/i5y4TE3Az/4okEHn4ImwnYyftxGMdTOZ6bPiM0OpQn9lREx2m4a21SxeqqV4kp+G8xP4Zq2hQAAAAJApO8SviyvDYve1kGRw2PRJhHHQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Plantilla.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="RevisionEsquemas.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="BucleCarga.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Carga.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="MaestroStaging.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Esquemas.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Bucle.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Maestro.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="Audit_NETOLEDB.conmgr" />
@@ -190,7 +189,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">150</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">140</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -397,83 +396,19 @@
                 <SSIS:Property SSIS:Name="Name">Plantilla</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">19</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">21</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6448313E-21EB-4323-A897-1CC2B5FB4F09}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C8643BCB-F117-48A4-B660-222B07CC30F0}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
                 <SSIS:Parameter SSIS:Name="ParentPkgExecKey">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">{A90F5EC8-A8E7-4C36-BEA6-3B09F0FCA996}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">-1</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-              </SSIS:Parameters>
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="RevisionEsquemas.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{B5D43830-789F-4887-ACDF-63F7257A60BD}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">RevisionEsquemas</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">21</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9FCD49EB-853E-4147-AC82-DB73142D1332}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="ParentPkgExecKey">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{DD47E083-5D3F-4866-8A4E-2701535F286A}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">-1</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-              </SSIS:Parameters>
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="BucleCarga.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{DCD0A9BB-12DD-45E9-86A2-E5CBE9F48ACC}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">BucleCarga</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">24</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{661C45F8-937A-4C4F-B6A2-0A114AED5CE1}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="ParentPkgExecKey">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{9BA20E39-6635-4728-BD1B-537F628A1FD2}</SSIS:Property>
                     <SSIS:Property SSIS:Name="CreationName">
                     </SSIS:Property>
                     <SSIS:Property SSIS:Name="Description">
@@ -493,14 +428,14 @@
                 <SSIS:Property SSIS:Name="Name">Carga</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">21</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">32</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{48DEED7E-8498-4D24-9164-475069E73CE8}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CC5798EC-02E8-412D-8E80-0714685FE4C8}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
                 <SSIS:Parameter SSIS:Name="ParentPkgExecKey">
@@ -549,20 +484,84 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="MaestroStaging.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Esquemas.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{8E0CCF04-BD3B-4B16-AAAD-0A420CFDB5BA}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">MaestroStaging</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{ED1DDD4C-7629-4522-B197-1EAD5C3CF9D1}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Esquemas</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">23</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{D32A4100-A6C4-45AE-A962-1F71B17BC0EB}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{45568AB0-4F14-4381-B41B-4C1F14519F81}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="ParentPkgExecKey">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{DD47E083-5D3F-4866-8A4E-2701535F286A}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">-1</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Bucle.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{766EA224-9F60-412C-B31F-A59BAB2F8386}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Bucle</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">28</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E61FCA12-4DCD-4B60-8C11-FFE946F0A263}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="ParentPkgExecKey">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{9BA20E39-6635-4728-BD1B-537F628A1FD2}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">-1</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Maestro.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{8AC6B183-5AD2-4F1C-896A-D931ACCE4AEB}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Maestro</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">20</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C9D96272-300C-4DAB-ABB3-4A8F1D1560D0}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
                 <SSIS:Parameter SSIS:Name="ParentPkgExecKey">
@@ -597,7 +596,7 @@
         <ConnectionProviderMappings />
         <ConnectionSecurityMappings />
         <DatabaseStorageLocations />
-        <TargetServerVersion>SQLServer2019</TargetServerVersion>
+        <TargetServerVersion>SQLServer2017</TargetServerVersion>
         <AzureMode>false</AzureMode>
         <LinkedAzureTenantId />
         <LinkedAzureAccountId />

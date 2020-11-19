@@ -209,4 +209,19 @@
     <Build Include="Security\xls.sql" />
     <Build Include="Security\Permissions.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Audit\Audit.sqlproj">
+      <Name>Audit</Name>
+      <Project>{0351cbff-a995-4a4e-811c-c03841710bdc}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>Audit</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="Audit">
+      <DefaultValue>Audit</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
 </Project>

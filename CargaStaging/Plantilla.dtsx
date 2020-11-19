@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="11/16/2020 4:00:35 PM"
@@ -11,8 +11,9 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Plantilla"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{6448313E-21EB-4323-A897-1CC2B5FB4F09}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{F13245B5-725B-4830-AB4B-AF2D4B70856F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -121,6 +122,28 @@
       DTS:ObjectName="InputFilesPath">
       <DTS:VariableValue
         DTS:DataType="8">\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4D0A1029-DB48-4315-B15E-FA939EFA0A00}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::SpecialRowCnt]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="InsertedNonStdRowCnt">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9EF2E61B-2457-42D1-A460-ED126BB850B3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::NewRowCnt] +  @[User::Type2NewRowCnt]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="InsertedStdRowCnt">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -370,7 +393,9 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{B8FD9CD0-BA57-4310-96DC-447E8E285B0F}"
-      DTS:IncludeInDebugDump="6789"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::ExpiredRowCnt] + @[User::UpdatedRowCnt]"
+      DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="UpdatedRowCnt">
       <DTS:VariableValue

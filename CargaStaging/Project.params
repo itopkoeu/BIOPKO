@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
   <SSIS:Parameter
     SSIS:Name="FilesPath">
@@ -311,7 +311,7 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1ogJbkxFyEGUhoXPJPmvDwAAAAACAAAAAAADZgAAwAAAABAAAAAgR2XpKx/y0vZZRfSe8CeoAAAAAASAAACgAAAAEAAAAKBJjZCZLpzICGatRH5lYMyAAAAAZOvb6IA8UUQ8w1AQXKJPhHMTaaA/FeycpcwSyjsRWXMMlDydXJ9dFY+b1s5hvzTtl5BWTgiJboXt7nyL+WS1kRMg1qDILyfaCmkXei2O/Ye8b1JVCamAKyjiV/LJwAy7bUtlMFH23cLDc92f0qsD/C3sOlB1DkNDH1qW9L1TBrUUAAAAUDJclK6eg1qqp16H58yyEwFFmmk=</SSIS:Property>
+        SSIS:Sensitive="1"></SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -396,7 +396,7 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1ogJbkxFyEGUhoXPJPmvDwAAAAACAAAAAAADZgAAwAAAABAAAADEd4waftuzJ7nOhEVl0xzOAAAAAASAAACgAAAAEAAAAFcVAYeWIaLSdsb0woQQglmAAAAA0jYmyl7oqytziB5ti3bRr16mBzOe427HI4WVyqSHv8AiKvsfy7BZbdqGSs+rvsAXQt1oCbdy9QOT4B1vfpyaEcrfPz3yg9De/+KOOom1f/wG74ccKjPeaiZmeAZu20Xzob8f8WYaKd5HMNiAg+L/OgGm+e9qVvLl6w/Zej0Wu/0UAAAAmgUNtqNnxngiEYX/S2Abr80DLcE=</SSIS:Property>
+        SSIS:Sensitive="1"></SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -439,7 +439,7 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1ogJbkxFyEGUhoXPJPmvDwAAAAACAAAAAAADZgAAwAAAABAAAAA6f2dNEEOPv4IFfdo21wTiAAAAAASAAACgAAAAEAAAAI0pwzOn0LkR7D5JWUg8+7WAAAAAIBt0quzJdvt/MjMhw21DKYl0UV+xsCq3UDYl/S9xmjSehNo9TkBVYYrxrURW7aIBrvzuqOKnNMivNwAiB2SaOVqhp8xP/m3oU9k/Gg0hswNvLbyI85aO03wzLdvURMEOsr+ao15PDG4pXrTa1AITAhTJojrWb6pioE/Bzd1+RyIUAAAASduYh/mU76v3SoLg6g0jF7LpTQ0=</SSIS:Property>
+        SSIS:Sensitive="1"></SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
