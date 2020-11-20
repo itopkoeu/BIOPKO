@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Correo"
+  DTS:DTSID="{D75E59FF-BB64-4F50-827E-65D212DAA3AF}"
+  DTS:CreationName="SMTP">
+  <DTS:ObjectData>
+    <SmtpConnectionManager
+      ConnectionString="SmtpServer=10.2.200.85;UseWindowsAuthentication=False;EnableSsl=False;"
+      ConnectByProxy="False" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
