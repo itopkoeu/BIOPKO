@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>Staging</Name>
+    <Name>Datawarehouse</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{d142bd3d-23d4-43ba-9b6a-0480034c99ef}</ProjectGuid>
+    <ProjectGuid>{d393d341-116c-4749-92f1-8c195af99ad3}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>Staging</RootNamespace>
-    <AssemblyName>Staging</AssemblyName>
+    <RootNamespace>Datawarehouse</RootNamespace>
+    <AssemblyName>Datawarehouse</AssemblyName>
     <ModelCollation>1033,CS</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -117,70 +117,18 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="fdp\" />
-    <Folder Include="fdp\Tables\" />
     <Folder Include="dim\" />
     <Folder Include="dim\Tables\" />
     <Folder Include="fact\" />
     <Folder Include="fact\Tables\" />
-    <Folder Include="etl\" />
-    <Folder Include="etl\Views\" />
+    <Folder Include="dtm\" />
+    <Folder Include="dtm\Tables\" />
     <Folder Include="Security\" />
+    <Folder Include="etl\" />
+    <Folder Include="etl\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="fdp\Tables\KNA1.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBRK.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBRP.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\LIKP.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\LIPS.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBAK.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBAP.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\ZFDG_KONV.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\MAKT.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\KNVP.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBPA.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBUP.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\MARA.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dim\Tables\Producto.sql">
+    <Build Include="dim\Tables\Solicitante.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
@@ -188,25 +136,41 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="dim\Tables\Descuentos.sql">
+    <Build Include="dim\Tables\Producto.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="etl\Views\dimSolicitante.sql">
+    <Build Include="dim\Tables\Pagador.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dim\Tables\Destinatario.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dtm\Tables\Time.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dtm\Tables\Date.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\OPKO_NGraells.sql" />
     <Build Include="Security\OPKO_NGraells_1.sql" />
     <Build Include="Security\RoleMemberships.sql" />
-    <Build Include="Security\aux_.sql" />
+    <Build Include="etl\Stored Procedures\spFillTime.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="etl\Stored Procedures\spFillDate.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
     <Build Include="Security\dim.sql" />
     <Build Include="Security\dtm.sql" />
     <Build Include="Security\etl.sql" />
     <Build Include="Security\fact.sql" />
-    <Build Include="Security\fdp.sql" />
-    <Build Include="Security\origen.sql" />
-    <Build Include="Security\xls.sql" />
     <Build Include="Security\Permissions.sql" />
   </ItemGroup>
   <ItemGroup>

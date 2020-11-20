@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>Staging</Name>
+    <Name>Audit</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{d142bd3d-23d4-43ba-9b6a-0480034c99ef}</ProjectGuid>
+    <ProjectGuid>{0351cbff-a995-4a4e-811c-c03841710bdc}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>Staging</RootNamespace>
-    <AssemblyName>Staging</AssemblyName>
+    <RootNamespace>Audit</RootNamespace>
+    <AssemblyName>Audit</AssemblyName>
     <ModelCollation>1033,CS</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -117,111 +117,73 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="fdp\" />
-    <Folder Include="fdp\Tables\" />
-    <Folder Include="dim\" />
-    <Folder Include="dim\Tables\" />
-    <Folder Include="fact\" />
-    <Folder Include="fact\Tables\" />
-    <Folder Include="etl\" />
-    <Folder Include="etl\Views\" />
+    <Folder Include="audit\" />
+    <Folder Include="audit\Tables\" />
+    <Folder Include="err\" />
+    <Folder Include="err\Tables\" />
     <Folder Include="Security\" />
+    <Folder Include="audit\Functions\" />
+    <Folder Include="audit\Stored Procedures\" />
+    <Folder Include="err\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="fdp\Tables\KNA1.sql">
+    <Build Include="audit\Tables\PkgExecution.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="fdp\Tables\VBRK.sql">
+    <Build Include="audit\Tables\TableProcessing.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="fdp\Tables\VBRP.sql">
+    <Build Include="audit\Tables\AuditDimension.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="fdp\Tables\LIKP.sql">
+    <Build Include="err\Tables\ErrorLog.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="fdp\Tables\LIPS.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBAK.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBAP.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\ZFDG_KONV.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\MAKT.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\KNVP.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBPA.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\VBUP.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fdp\Tables\MARA.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dim\Tables\Producto.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="fact\Tables\Facturas.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dim\Tables\Descuentos.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="etl\Views\dimSolicitante.sql">
+    <Build Include="err\Tables\SchemaChanges.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\OPKO_NGraells.sql" />
     <Build Include="Security\OPKO_NGraells_1.sql" />
     <Build Include="Security\RoleMemberships.sql" />
-    <Build Include="Security\aux_.sql" />
-    <Build Include="Security\dim.sql" />
-    <Build Include="Security\dtm.sql" />
-    <Build Include="Security\etl.sql" />
-    <Build Include="Security\fact.sql" />
-    <Build Include="Security\fdp.sql" />
-    <Build Include="Security\origen.sql" />
-    <Build Include="Security\xls.sql" />
+    <Build Include="audit\Functions\fnCompareSchema.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="audit\Stored Procedures\spGetPkgExecutionKey.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="err\Stored Procedures\spManageError.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="audit\Stored Procedures\spUpdatePkgExecution.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="audit\Stored Procedures\spGetTableProcessingKey.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="audit\Stored Procedures\spUpdateTableProcessing.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="audit\Stored Procedures\spInsertAuditRecord.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="err\Stored Procedures\spVerifySchema.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\audit.sql" />
+    <Build Include="Security\err.sql" />
     <Build Include="Security\Permissions.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Audit\Audit.sqlproj">
-      <Name>Audit</Name>
-      <Project>{0351cbff-a995-4a4e-811c-c03841710bdc}</Project>
-      <Private>True</Private>
-      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-      <DatabaseSqlCmdVariable>Audit</DatabaseSqlCmdVariable>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <SqlCmdVariable Include="Audit">
-      <DefaultValue>Audit</DefaultValue>
-      <Value>$(SqlCmdVar__1)</Value>
-    </SqlCmdVariable>
   </ItemGroup>
 </Project>
