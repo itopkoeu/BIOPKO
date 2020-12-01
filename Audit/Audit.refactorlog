@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="a7dc7d38-184a-4174-847f-dfae4b750ddc" ChangeDateTime="11/30/2020 09:29:38">
+    <Property Name="ElementName" Value="[audit].[LastSuccessLoads].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[audit].[LastSuccessLoads]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastSuccessLoadKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4fcdcd75-3bea-4996-a997-2dffe95364aa" ChangeDateTime="11/30/2020 09:33:44">
+    <Property Name="ElementName" Value="[audit].[LastSuccessLoads].[Origen]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[audit].[LastSuccessLoads]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a0318d4b-83e7-4830-a4fd-a76f73eacfaf" ChangeDateTime="11/30/2020 09:36:56">
+    <Property Name="ElementName" Value="[audit].[LastSuccessLoads].[DataBaseName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[audit].[LastSuccessLoads]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SrcDataBaseName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c425e090-978a-493c-90b1-4959313fb88b" ChangeDateTime="11/30/2020 09:37:01">
+    <Property Name="ElementName" Value="[audit].[LastSuccessLoads].[SchemaName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[audit].[LastSuccessLoads]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SrcSchemaName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="65caad02-6bed-4964-90ba-ac7a14989a79" ChangeDateTime="11/30/2020 09:37:05">
+    <Property Name="ElementName" Value="[audit].[LastSuccessLoads].[TableName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[audit].[LastSuccessLoads]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SrcTableName" />
+  </Operation>
+</Operations>
