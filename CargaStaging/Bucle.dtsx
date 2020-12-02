@@ -12,8 +12,8 @@
   DTS:ObjectName="Bucle"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{B5FA43AA-AFB1-434F-986C-2B4211573DA9}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{231521A5-0387-4184-8E2B-B073D0869914}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -428,9 +428,9 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{C5DC4C8F-85FE-488C-B07A-2EDC84C01D17}"
+          SQLTask:Connection="{5A19833A-68C1-4B7E-A6A0-9F87A5ED7FA0}"
           SQLTask:IsStoredProc="True"
-          SQLTask:SqlStatementSource="audit.spInsertLastLoadSuccessTime" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="etl.spUpdateLastSuccessLoad" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="@ParentPkgExecKey"
             SQLTask:DtsVariableName="User::PkgExecKey"
@@ -790,6 +790,10 @@
           Id="Package\Actualizar metadatos de paquete"
           TopLeft="5.50000000000004,415.5" />
         <NodeLayout
+          Size="194,42"
+          Id="Package\Fechas de tablas nuevas"
+          TopLeft="25,107.5" />
+        <NodeLayout
           Size="226,42"
           Id="Package\Obtener metadatos de paquete"
           TopLeft="9,5.5" />
@@ -800,13 +804,13 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="200,102"
+          PanelSize="200,103"
           Size="200,146"
           Id="Package\Tablas a cargar"
           TopLeft="22,209.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="122,355.5">
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="122,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -826,13 +830,9 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="194,42"
-          Id="Package\Fechas de tablas nuevas"
-          TopLeft="25,107.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="122,47.5">
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="122,355.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

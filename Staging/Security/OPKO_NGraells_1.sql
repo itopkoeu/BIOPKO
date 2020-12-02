@@ -1,3 +1,0 @@
-﻿CREATE LOGIN [OPKO\NGraells]
-    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
-
