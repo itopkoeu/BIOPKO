@@ -12,8 +12,8 @@
   DTS:ObjectName="Bucle"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{231521A5-0387-4184-8E2B-B073D0869914}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{E3DFB533-B533-499A-866C-F46B7DEB3B14}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -392,9 +392,9 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{C5DC4C8F-85FE-488C-B07A-2EDC84C01D17}"
+          SQLTask:Connection="{5997AA4E-DA00-49E0-AEF6-61308446378D}"
           SQLTask:IsStoredProc="True"
-          SQLTask:SqlStatementSource="audit.GetPkgExecutionKey" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="audit.spUpdatePkgExecution" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="@PkgExecKey"
             SQLTask:DtsVariableName="User::PkgExecKey"
@@ -428,19 +428,19 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5A19833A-68C1-4B7E-A6A0-9F87A5ED7FA0}"
+          SQLTask:Connection="{F3752B9F-4560-4658-BE2D-DDEB4A13368E}"
           SQLTask:IsStoredProc="True"
           SQLTask:SqlStatementSource="etl.spUpdateLastSuccessLoad" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@ReturnValue"
+            SQLTask:DtsVariableName="User::ReturnValue"
+            SQLTask:ParameterDirection="ReturnValue"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="@ParentPkgExecKey"
             SQLTask:DtsVariableName="User::PkgExecKey"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="11"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@ReturnValue"
-            SQLTask:DtsVariableName="ReturnValue"
-            SQLTask:ParameterDirection="ReturnValue"
             SQLTask:DataType="11"
             SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
@@ -459,9 +459,9 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{C5DC4C8F-85FE-488C-B07A-2EDC84C01D17}"
+          SQLTask:Connection="{5997AA4E-DA00-49E0-AEF6-61308446378D}"
           SQLTask:IsStoredProc="True"
-          SQLTask:SqlStatementSource="audit.GetPkgExecutionKey" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="audit.spGetPkgExecutionKey" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="@PackageName"
             SQLTask:DtsVariableName="System::PackageName"
@@ -469,7 +469,7 @@
             SQLTask:DataType="16"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="PackageID"
+            SQLTask:ParameterName="@PackageID"
             SQLTask:DtsVariableName="System::PackageID"
             SQLTask:ParameterDirection="Input"
             SQLTask:DataType="9"
@@ -675,9 +675,9 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C5DC4C8F-85FE-488C-B07A-2EDC84C01D17}"
+              SQLTask:Connection="{5997AA4E-DA00-49E0-AEF6-61308446378D}"
               SQLTask:IsStoredProc="True"
-              SQLTask:SqlStatementSource="audit.GetPkgExecutionKey" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="audit.spUpdatePkgExecution" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="@PkgExecKey"
                 SQLTask:DtsVariableName="User::PkgExecKey"

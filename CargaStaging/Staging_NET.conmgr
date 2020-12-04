@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Staging_NET"
+  DTS:DTSID="{F3752B9F-4560-4658-BE2D-DDEB4A13368E}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::Staging_NET_ConnectionString]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::Staging_NET_Password]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=SPBCLSQL03;User ID=sa;Initial Catalog=Staging;Application Name=SSIS-CargaStaging-{F3752B9F-4560-4658-BE2D-DDEB4A13368E}SPBCLSQL03.Staging.sa1;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"></DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
